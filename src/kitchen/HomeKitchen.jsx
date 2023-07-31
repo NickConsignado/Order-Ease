@@ -88,92 +88,59 @@ function HomeKitchen() {
           </div>
         </div>
       </nav>
+    
+    {/* Kitchen Page Body */}
+    <div className="my-5 py-5 d-flex"> 
+    {/* 1st card */}
+        <div className="card my-5 mx-5 col-2">
+        <div className="card-body">
+        <h5>Order #1</h5>
+        <h6>Table-1</h6>
+        </div>
+        </div>
+    {/* 2nd card */}
+        <div className="card my-5 me-5 col-2">
+        <div className="card-body">
+        <h5>Order #2</h5>
+        <h6>Table-2</h6>
+        </div>
+        </div>
+    {/* 3rd card */}
+        <div className="card my-5 me-5 col-2">
+        <div className="card-body">
+        <h5>Order #3</h5>
+        <h6>Table-3</h6>
+        </div>
+        </div>
+    {/* 4th card */}
+        <div className="card my-5 me-5 col-2">
+        <div className="card-body">
+        <h5>Order #4</h5>
+        <h6>Table-4</h6>
+        </div>
+        </div>
+    {/* 5th card */}
+        <div className="card my-5 me-5 col-2">
+        <div className="card-body">
+        <h5>Order #5</h5>
+        <h6>Table-5</h6>
+        </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
       <div>
         Kitchen Page
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         Hello world
       </div>
     </>

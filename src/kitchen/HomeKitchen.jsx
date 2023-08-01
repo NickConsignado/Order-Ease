@@ -95,35 +95,50 @@ function HomeKitchen() {
         <div className="card my-5 mx-5 col-2">
         <div className="card-body">
         <h5>Order #1</h5>
-        <h6>Table-1</h6>
+        <h6>T-1</h6>
+        
+        {/* Order list body */}
+        <div className="d-flex">
+        <div className="w-50">
+        <p>6 - pc. Chickenjoy</p>
+        <p>2 - pc. Pancakes</p>
+        <p>2 - pc. Coffee</p>
+        </div>
+        <div className="w-50">
+        <p className="text-warning">Preparing</p>
+        <p className="text-success">Ready</p>
+        <p className="text-danger">Cancelled</p>
+        </div>
+        </div>
+
         </div>
         </div>
     {/* 2nd card */}
         <div className="card my-5 me-5 col-2">
         <div className="card-body">
         <h5>Order #2</h5>
-        <h6>Table-2</h6>
+        <h6>T-2</h6>
         </div>
         </div>
     {/* 3rd card */}
         <div className="card my-5 me-5 col-2">
         <div className="card-body">
         <h5>Order #3</h5>
-        <h6>Table-3</h6>
+        <h6>T-3</h6>
         </div>
         </div>
     {/* 4th card */}
         <div className="card my-5 me-5 col-2">
         <div className="card-body">
         <h5>Order #4</h5>
-        <h6>Table-4</h6>
+        <h6>T-4</h6>
         </div>
         </div>
     {/* 5th card */}
         <div className="card my-5 me-5 col-2">
         <div className="card-body">
         <h5>Order #5</h5>
-        <h6>Table-5</h6>
+        <h6>T-5</h6>
         </div>
         </div>
 

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeKitchen from "./kitchen/HomeKitchen";
+import Admin from "./admin/Admin";
 import HomeCashier from "./cashier/HomeCashier";
 import HomeFoodServer from "./foodServer/HomeFoodServer";
 import LoginPage from "./Login/LoginPage";
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/home-cashier" element={<HomeCashier />} />
-          <Route path="/home-kitchen" element={<HomeKitchen />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/home-food-server" element={<HomeFoodServer />} />
         </Routes>
       </BrowserRouter>

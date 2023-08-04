@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Admin from "./admin/Admin";
-import HomeCashier from "./cashier/HomeCashier";
-import HomeFoodServer from "./foodServer/HomeFoodServer";
+import User from "./user/User";
+
 import LoginPage from "./Login/LoginPage";
 
 function App() {
@@ -10,9 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/home-cashier" element={<HomeCashier />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/home-food-server" element={<HomeFoodServer />} />
+          <Route path="/user" element={<User />} />
         </Routes>
       </BrowserRouter>
     </>

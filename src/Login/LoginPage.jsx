@@ -8,7 +8,7 @@ function LoginPage() {
           <p>Admin</p>
         </Link>
         <Link to="/user">
-          <p>Cashier</p>
+          <p>User</p>
         </Link>
       </div>
     </>

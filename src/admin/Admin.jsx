@@ -6,13 +6,10 @@ function Admin() {
       <nav className="adminNav navbar text-light fixed-top">
         <div className="container-fluid">
           <div>
-            <NavLink style={{ textDecoration: "none" }}>
+            <NavLink to="" style={{ textDecoration: "none" }}>
               <span className="navbar-brand text-light">Admin</span>
             </NavLink>
-            
-            <NavLink style={{ textDecoration: "none" }}>
-              <span className="navbar-brand text-light">User List</span>
-            </NavLink>
+
           </div>
           <h1>Logo</h1>
           <button
@@ -56,7 +53,7 @@ function Admin() {
                 
                   <li>
                     
-                    <NavLink to="/" style={{ textDecoration: "none" }}>
+                    <NavLink to="/admin" style={{ textDecoration: "none" }}>
               <span className="navbar-brand">Logout</span>
             </NavLink>
                   </li>
@@ -66,65 +63,31 @@ function Admin() {
           </div>
         </div>
       </nav>
-
-      {/* Kitchen Page Body */}
-      <div className="adminBody d-flex">
-        {/* 1st card */}
-
-        <div className="adminCard text-light mt-5 pt-4 me-5 col-lg-2">
-          <div>
-            <h5>Sorting</h5>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>hello world</p>
-          </div>
-        </div>
-        <div className="container-fluid d-flex my-5 py-5">
-          {/* 2nd card */}
-          <div className="adminCard my-5 me-5 col-lg-10 rounded">
-            <div className="ms-3 mt-3 text-light">
-              
-
-            </div>
-          </div>
-        </div>
-      </div>
-
+<div className="mt-5 pt-3 "></div>
+      <nav className="navbar navbar-expand-lg bg-light">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Features</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Pricing</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
       <div>Admin Hello world</div>
     </>
   );

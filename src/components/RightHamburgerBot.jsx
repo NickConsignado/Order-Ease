@@ -1,6 +1,6 @@
 import React from "react";
 
-function HamburgerBot() {
+const RightHamburgerBot = () => {
   return (
     <nav className="navbar bg-body-tertiary fixed-top">
       <div className="container-fluid">
@@ -92,6 +92,6 @@ function HamburgerBot() {
       </div>
     </nav>
   );
-}
+};
 
-export default HamburgerBot;
+export default RightHamburgerBot;

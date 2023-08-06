@@ -18,6 +18,9 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import IconButton from "@mui/material/IconButton";
 import classes from "./App.module.scss";
 import Inventory from "./inventory/Inventory";
+import DailyUpdates from "./dailyUpdates/DailyUpdates";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
 
@@ -57,9 +60,9 @@ const NavBar = () => {
         <Box sx={{ overflow: "auto" }}>
           <List>
             <ListItem key={1} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={"Daily Forms"} />
-              </ListItemButton>
+              <Stack spacing={2} direction="row" className={classes.forming}>
+                <Button variant="text">Daily Forms</Button>
+              </Stack>
             </ListItem>
             <ListItem key={1} disablePadding>
               <ListItemButton onClick={(event) => handleExpandCollapse()}>
@@ -96,11 +99,22 @@ const NavBar = () => {
                 </ListItemButton>
               </List>
             </Collapse>
+            <ListItem key={1} disablePadding>
+              <ListItemButton>
+                <ListItemText primary={"Weekly Updates"} />
+              </ListItemButton>
+            </ListItem>
+            <ListItem key={1} disablePadding>
+              <ListItemButton>
+                <ListItemText primary={"Monthly Updates"} />
+              </ListItemButton>
+            </ListItem>
           </List>
         </Box>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <Inventory />
+        {/* <Inventory /> */}
+        <DailyUpdates />
       </Box>
     </Box>
   );

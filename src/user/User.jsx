@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
+import AppBar from "../components/AppBar.jsx";
 
 function User() {
   return (
     <>
-      <Navbar />
+      <AppBar />
     </>
   );
 }

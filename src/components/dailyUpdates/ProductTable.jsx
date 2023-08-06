@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from "react";
 import {
   Table,
   TableBody,
@@ -10,7 +10,6 @@ import {
   Button,
   Stack,
   TableCell,
-  ButtonGroup,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
@@ -24,18 +23,7 @@ const items = [
   { desc: "Item 5", qty: "10", price: "1000", sum: "" },
 ];
 
-const ItemListTable = () => {
-  const [counter, setCounter] = useState(0);
-
-  const handleIncrement = () => {
-    setCounter(counter + 1);
-  };
-
-  const handleDecrement = () => {
-    setCounter(counter - 1);
-  };
-
-  const displayCounter = counter > 0;
+const ProductTable = () => {
   return (
     <Card>
       <TableContainer component={Paper}>
@@ -51,23 +39,13 @@ const ItemListTable = () => {
               <TableCell>Desc</TableCell>
               <TableCell align="right">Qty.</TableCell>
               <TableCell align="right">Unit</TableCell>
-              <TableCell align="right">Sum</TableCell>
+              <TableCell align="right">Sells</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {items.map((item) => (
               <TableRow key={item.desc}>
                 <TableCell>{item.desc}</TableCell>
-                {/* <TableCell align="right">
-                  <ButtonGroup
-                    size="small"
-                    aria-label="small outlined button group"
-                  >
-                    <Button>+</Button>
-                    {displayCounter && <Button disabled>{counter}</Button>}
-                    {displayCounter && <Button>-</Button>}
-                  </ButtonGroup>
-                </TableCell> */}
                 <TableCell align="right">{item.qty}</TableCell>
                 <TableCell align="right">{item.price}</TableCell>
                 <TableCell align="right">{item.sum}</TableCell>
@@ -81,17 +59,9 @@ const ItemListTable = () => {
             </TableRow>
           </TableBody>
         </Table>
-        <Stack direction="row" spacing={2} className={classes.table_btns}>
-          <Button variant="outlined" startIcon={<DeleteIcon />}>
-            Remove
-          </Button>
-          <Button variant="contained" endIcon={<SendIcon />}>
-            Submit
-          </Button>
-        </Stack>
       </TableContainer>
     </Card>
   );
 };
 
-export default ItemListTable;
+export default ProductTable;

@@ -1,12 +1,19 @@
 import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import Card from "@mui/material/Card";
+import {
+  Table,
+  TableBody,
+  TableHead,
+  TableRow,
+  TableContainer,
+  Paper,
+  Card,
+  Button,
+  Stack,
+  TableCell,
+} from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+import SendIcon from "@mui/icons-material/Send";
+import classes from "../App.module.scss";
 
 const items = [
   { desc: "Item 1", qty: "10", price: "1000", sum: "" },
@@ -63,6 +70,14 @@ const ItemListTable = () => {
             </TableRow>
           </TableBody>
         </Table>
+        <Stack direction="row" spacing={2} className={classes.table_btns}>
+          <Button variant="outlined" startIcon={<DeleteIcon />}>
+            Remove
+          </Button>
+          <Button variant="contained" endIcon={<SendIcon />}>
+            Submit
+          </Button>
+        </Stack>
       </TableContainer>
     </Card>
   );
